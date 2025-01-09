@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tic Tac Toe</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container text-center mt-5">
+			<h3 class="animate-charcter">Tic Tac Toe</h3>
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6">
+					<div id="playerForm" class="mb-3">
+						<div class="row">
+							<!-- Player 1 Input -->
+							<div class="col-md-6 mb-2">
+								<input
+									id="player1"
+									type="text"
+									class="form-control"
+									placeholder="Enter Player 1 Name"
+								/>
+							</div>
+							<!-- Player 2 Input -->
+							<div class="col-md-6 mb-2">
+								<input
+									id="player2"
+									type="text"
+									class="form-control"
+									placeholder="Enter Player 2 Name"
+								/>
+							</div>
+						</div>
+						<button id="startGame" class="btn btn-primary">Start Game</button>
+					</div>
+					<div id="gameBoard" class="hidden">
+						<div class="row">
+							<div id="cell0" class="col cell"></div>
+							<div id="cell1" class="col cell"></div>
+							<div id="cell2" class="col cell"></div>
+						</div>
+						<div class="row">
+							<div id="cell3" class="col cell"></div>
+							<div id="cell4" class="col cell"></div>
+							<div id="cell5" class="col cell"></div>
+						</div>
+						<div class="row">
+							<div id="cell6" class="col cell"></div>
+							<div id="cell7" class="col cell"></div>
+							<div id="cell8" class="col cell"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="winnerCraker" class="craker">
+			<img src="craker.gif" />
+		</div>
+		<div id="winnerPopup" class="popup">
+			<div class="popup-content">
+				<img src="WinImage.gif" alt="Winning Image" />
+				<h2>Congratulations..</h2>
+				<h2 id="winnerText"></h2>
+				<button id="restartBtn" class="btn btn-primary">Play Again</button>
+			</div>
+		</div>
+		<div id="drawPopup" class="popup">
+			<div class="popup-content">
+				<iframe src="https://giphy.com/embed/oyzZD4rlCxBnks2vLE"></iframe>
+				<h2>You Lose the Game!</h2>
+				<button id="restartBtn" class="btn btn-primary">Play Again</button>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
